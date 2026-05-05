@@ -14,9 +14,34 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 const MONGO_URI = process.env.MONGO_URI || 'mongodb://localhost:27017/heatiq';
 
-mongoose.connect(MONGO_URI)
-    .then(() => console.log('MongoDB connected'))
-    .catch(err => console.log('MongoDB error:', err));
+let cachedConnection = null;
+
+async function connectDB() {
+    if (cachedConnection && mongoose.connection.readyState === 1) {
+        return cachedConnection;
+    }
+    try {
+        cachedConnection = await mongoose.connect(MONGO_URI, {
+            serverSelectionTimeoutMS: 5000,
+            socketTimeoutMS: 45000,
+            bufferCommands: false
+        });
+        console.log('MongoDB connected');
+        return cachedConnection;
+    } catch (err) {
+        console.log('MongoDB error:', err.message);
+        throw err;
+    }
+}
+
+app.use(async (req, res, next) => {
+    try {
+        await connectDB();
+        next();
+    } catch (err) {
+        res.status(500).json({ error: 'Database connection failed' });
+    }
+});
 
 const users = require('./routes/users');
 const weather = require('./routes/weather');

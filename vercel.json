@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "app.js", "use": "@vercel/node" }
+  ],
+  "routes": [
+    { "src": "/users(.*)",   "dest": "app.js" },
+    { "src": "/weather(.*)", "dest": "app.js" },
+    { "src": "/reports(.*)", "dest": "app.js" },
+    { "src": "/admin(.*)",   "dest": "app.js" },
+    { "src": "/(.*)",        "dest": "/public/$1" }
+  ]
+}

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HeatIQ — Stay Safe in the Heat | ClimaTech</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <img src="assets/hlogo.png" alt="HeatIQ ClimaTech" class="logo-img" />
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+      <a href="register.html" class="btn-primary nav-cta">Get Started</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+<section class="hero" id="home">
+    <div class="hero-bg">
+      <img src="assets/himg1.jpg" alt="Worker in heat" class="hero-bg-img" />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Live Heat Risk Monitoring
+      </div>
+      <h1 class="hero-title">
+        Stay Safe<br />
+        <span class="gradient-text">in the Heat.</span>
+      </h1>
+      <p class="hero-sub">
+        Real time heat risk alerts powered by feels like temperature, humidity & UV —
+        built for outdoor workers and the families who worry about them.
+      </p>
+      <div class="hero-actions">
+        <a href="dashboard.html" class="btn-primary btn-lg">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          Check My Risk Now
+        </a>
+        <a href="#pricing" class="btn-ghost btn-lg">For Businesses →</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">45°C+</span>
+          <span class="stat-label">UAE Summer Feels Like</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">4-in-1</span>
+          <span class="stat-label">Risk Factors Measured</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">Free</span>
+          <span class="stat-label">For Personal Use</span>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+<section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What We Measure</span>
+        <h2>Heat risk isn't just temperature.</h2>
+        <p>We combine four real world factors to give you an accurate picture of how dangerous it actually is outside.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card feature-card--large">
+          <div class="feature-num">01</div>
+          <h3>Heat Risk Level</h3>
+          <p>Calculated from feels like temperature, humidity, and UV index together — not just the number on a thermometer.</p>
+          <div class="risk-pills">
+            <span class="risk-pill low">Low</span>
+            <span class="risk-pill moderate">Moderate</span>
+            <span class="risk-pill high">High</span>
+            <span class="risk-pill extreme">Extreme</span>
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-num">02</div>
+          <h3>Safe Hours Planner</h3>
+          <p>See the 3 safest time windows to be outside today based on real hourly forecast data.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-num">03</div>
+          <h3>Hydration Reminders</h3>
+          <p>Browser notifications every 20, 30, or 60 minutes — so you never forget to drink water on a hot shift.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-num">04</div>
+          <h3>Shareable Reports</h3>
+          <p>Download a branded safety report card as an image. Send it to your supervisor, your team, or your family.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section class="how-it-works" id="how-it-works">
+    <div class="hiw-image-col">
+      <img src="assets/himg2.jpg" alt="Workers at construction site sunset" class="hiw-img" />
+      <div class="hiw-img-overlay"></div>
+    </div>
+    <div class="hiw-content-col">
+      <span class="section-tag">How It Works</span>
+      <h2>Simple enough for any worker on any device.</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">01</div>
+          <div class="step-body">
+            <h4>Enter your location</h4>
+            <p>Type any city or tap "Use My Location" for instant GPS based detection.</p>
+          </div>
+        </div>
+        <div class="step-connector"></div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <div class="step-body">
+            <h4>See your real time risk level</h4>
+            <p>Your heat risk — Low, Moderate, High, or Extreme — updated live using Open Meteo weather data.</p>
+          </div>
+        </div>
+        <div class="step-connector"></div>
+        <div class="step">
+          <div class="step-num">03</div>
+          <div class="step-body">
+            <h4>Follow tips & share your report</h4>
+            <p>Get personalised safety tips, set hydration reminders, and share a branded report card with one tap.</p>
+          </div>
+        </div>
+      </div>
+      <a href="dashboard.html" class="btn-primary">Try It Now →</a>
+    </div>
+  </section>
+
+<section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Pricing</span>
+        <h2>Free for everyone.<br />Powerful for businesses.</h2>
+        <p>Personal safety is always free. Companies protecting outdoor crews upgrade to our Business Plan.</p>
+      </div>
+
+      <div class="pricing-grid">
+        
+        <div class="pricing-card">
+          <div class="plan-header">
+            <span class="plan-label">Personal</span>
+            <div class="plan-price">
+              <span class="price-amount">AED 0</span>
+              <span class="price-period">Forever free</span>
+            </div>
+          </div>
+          <ul class="plan-features">
+            <li><span class="check">✓</span> Real time heat risk checker</li>
+            <li><span class="check">✓</span> Hourly forecast bar (24hr)</li>
+            <li><span class="check">✓</span> Hydration reminders</li>
+            <li><span class="check">✓</span> Save up to 5 reports</li>
+            <li><span class="check">✓</span> Shareable report card (image)</li>
+          </ul>
+          <a href="register.html" class="btn-ghost btn-full">Get Started Free</a>
+        </div>
+
+<div class="pricing-card pricing-card--featured">
+          <div class="featured-badge">Most Popular</div>
+          <div class="plan-header">
+            <span class="plan-label">Business</span>
+            <div class="plan-price">
+              <span class="price-amount">AED 499</span>
+              <span class="price-period">/month</span>
+            </div>
+          </div>
+          <ul class="plan-features">
+            <li><span class="check">✓</span> Everything in Personal</li>
+            <li><span class="check">✓</span> Unlimited worker profiles</li>
+            <li><span class="check">✓</span> Live Worker Risk Status Board</li>
+            <li><span class="check">✓</span> Daily shift safety briefing</li>
+            <li><span class="check">✓</span> Printable + shareable reports</li>
+            <li><span class="check">✓</span> One time onboarding & setup</li>
+          </ul>
+          <a href="register.html?type=business" class="btn-primary btn-full">Contact Us</a>
+          <p class="plan-note">One time MongoDB setup & onboarding fee applies.</p>
+        </div>
+      </div>
+
+<div class="fact-banner">
+        <div class="fact-inner">
+          <span class="fact-label">Did You Know</span>
+          <p class="fact-text">Heat is the leading weather related cause of death worldwide, claiming nearly half a million lives each year — more than any other natural disaster.</p>
+          <span class="fact-source">— World Health Organization</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section class="cta-strip">
+    <div class="container">
+      <div class="cta-strip-inner">
+        <div class="cta-strip-text">
+          <h2>Summer's coming. Is your team ready?</h2>
+          <p>Takes 30 seconds to set up. No app download needed.</p>
+        </div>
+        <div class="cta-strip-actions">
+          <a href="register.html" class="btn-primary btn-lg">Start for Free</a>
+          <a href="register.html?type=business" class="btn-ghost btn-lg">Business Plan →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="assets/hlogo.png" alt="HeatIQ" class="footer-logo" />
+          <p>Protecting outdoor workers from heat risk — one shift at a time.</p>
+        </div>
+        <div class="footer-links-group">
+          <h5>Product</h5>
+          <a href="#features">Features</a>
+          <a href="#how-it-works">How It Works</a>
+          <a href="#pricing">Pricing</a>
+          <a href="dashboard.html">Dashboard</a>
+        </div>
+        <div class="footer-links-group">
+          <h5>Account</h5>
+          <a href="login.html">Login</a>
+          <a href="register.html">Register</a>
+          <a href="register.html?type=business">For Business</a>
+        </div>
+        <div class="footer-links-group">
+          <h5>Follow Us</h5>
+          <a href="https://www.instagram.com/__heatiq.app?igsh=MWlzZHlhbnY0dmtuYg%3D%3D&utm_source=qr" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.tiktok.com/@na863491?_r=1&_t=ZS-961QdohFLOb" target="_blank" rel="noopener">TikTok</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 ClimaTech. All rights reserved.</span>
+        <span class="footer-made">Made with care for UAE outdoor workers</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+      hamburger.classList.toggle('active');
+    });
+
+navLinks.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        hamburger.classList.remove('active');
+      });
+    });
+
+const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          observer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.feature-card, .step, .pricing-card, .section-header').forEach(el => {
+      el.classList.add('reveal');
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>
